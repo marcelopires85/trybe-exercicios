@@ -77,3 +77,32 @@ header div {
   border-radius: 20px;
   border: 2px solid white;
 }
+
+.section-pq-premium {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.section-pq-premium h2 {
+  font-size: 30px;
+  padding: 70px 0;
+}
+
+.premium-itens {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.premium-itens img {
+  width: 120px;
+  padding-bottom: 20px;
+}
+
+.premium-itens div {
+  padding: 0 40px 70px 40px;
+}
+
+.premium-itens h4 {
+  padding-bottom: 10px;
+}
