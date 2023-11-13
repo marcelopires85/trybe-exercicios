@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  padding: 15px;
+}
+
+header div {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.spotify-logo {
+  width: 150px;
+}
+
+.menu {
+  color: white;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 20px;
+}
