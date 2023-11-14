@@ -106,3 +106,55 @@ header div {
 .premium-itens h4 {
   padding-bottom: 10px;
 }
+
+.plans {
+  background-color: #efefef;
+}
+
+.plans div {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.plans h2 {
+  font-size: 30px;
+  padding-top: 70px;
+}
+
+.plans h3 {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.credit-cards {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.credit-cards img {
+  width: 30px;
+}
+
+.section-plans {
+  display: flex;
+}
+
+.section-plans span {
+  background-color: #2a72ea;
+  color: white;
+  border-radius: 4px;
+}
+
+.plan-style {
+  background-color: white;
+  box-shadow: 1px 1px 5px rgb(141, 141, 141);
+  border-radius: 7px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 500px;
+  max-width: 180px;
+  font-size: 15px;
+}
