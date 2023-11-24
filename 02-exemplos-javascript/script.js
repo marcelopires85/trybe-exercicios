@@ -33,7 +33,7 @@ const modulo = num1 % num2;
 
 console.log(modulo);
 
-//Forma resumida de resolver o mesmo problema acima
+//Forma resumida e descritiva de resolver o mesmo problema acima
 
 let num01 = 10;
 let num02 = 5;
@@ -75,7 +75,7 @@ if (num0001 > num0002 && num1 > num0003) {
   console.log("IIHH, tem números iguais!");
 }
 
-//Definir três lados de um triângulo
+//Definir três lados de um triângulo - Três variáveis, uso de "E" e "Exatamente igual a"
 
 let degreeAngleA = 65;
 let degreeAngleB = 100;
@@ -98,7 +98,7 @@ if (allAnglesArePositives) {
 
 //Exercício [5]
 
-//Switch Xadrez
+//Switch Xadrez - Switch/Case
 
 let xadrez = 4;
 let jogada;
@@ -153,3 +153,36 @@ switch (chessPiece.toLowerCase()) {
   default:
     console.log("Erro, peça inválida!");
 }
+
+//Exercício [6] - Calculadora de Impostos - If/Else usando duas variáveis
+
+let alicotaInss;
+let aliotaIR;
+
+let salarioBruto = 4000;
+
+if (salarioBruto <= 1556.94) {
+  alicotaInss = salarioBruto * 0.08;
+} else if (salarioBruto <= 2594.92) {
+  alicotaInss = salarioBruto * 0.09;
+} else if (salarioBruto <= 5189.82) {
+  alicotaInss = salarioBruto * 0.11;
+} else {
+  alicotaInss = 570.88;
+}
+
+let salarioLiquido = salarioBruto - alicotaInss;
+
+if (salarioLiquido <= 1903.98) {
+  aliotaIR = 0;
+} else if (salarioLiquido <= 2826.65) {
+  aliotaIR = salarioLiquido * 0.075 - 142.8;
+} else if (salarioLiquido <= 3751.05) {
+  aliotaIR = salarioLiquido * 0.15 - 354.8;
+} else if (salarioLiquido <= 4664.68) {
+  aliotaIR = salarioLiquido * 0.225 - 636.13;
+} else {
+  aliotaIR = salarioLiquido * 0.275 - 869.36;
+}
+
+console.log("Salário: R$" + (salarioLiquido - aliotaIR));
