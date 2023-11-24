@@ -95,3 +95,61 @@ if (allAnglesArePositives) {
 } else {
   console.log("Erro: ângulo inválido!");
 }
+
+//Exercício [5]
+
+//Switch Xadrez
+
+let xadrez = 4;
+let jogada;
+
+switch (xadrez) {
+  case 1:
+    xadrez = "Uma casa reta";
+    break;
+  case 2:
+    xadrez = "Andar na lateral";
+    break;
+  case 3:
+    xadrez = "Andar na diagonal";
+    break;
+  case 4:
+    xadrez = "Andar em L";
+    break;
+  case 5:
+    xadrez = "Andar em qualquer direção";
+    break;
+  case 6:
+    xadrez = "Andar uma casa em qualquer direção";
+}
+
+console.log(xadrez);
+
+//Código do exercício da Trybe
+
+let chessPiece = "bispo";
+
+switch (chessPiece.toLowerCase()) {
+  case "rei":
+    console.log("Rei -> Uma casa para qualquer direção.");
+    break;
+  case "bispo":
+    console.log("Bispo -> Diagonais.");
+    break;
+  case "rainha":
+    console.log("Rainha -> Diagonal, horizontal e vertical.");
+    break;
+  case "cavalo":
+    console.log('Cavalo -> "L" pode pular sobre as peças.');
+    break;
+  case "torre":
+    console.log("Torre -> Horizontal e vertical.");
+    break;
+  case "peão":
+    console.log(
+      "Peão -> Uma casa para frente, no primeiro movimento podem ser duas casas."
+    );
+    break;
+  default:
+    console.log("Erro, peça inválida!");
+}
