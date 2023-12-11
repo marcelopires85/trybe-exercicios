@@ -135,3 +135,48 @@ if (result === 0) {
 } else {
   console.log(result);
 }
+
+//Desafio dos Asterísticos
+
+let n = 5;
+let symbol = "*";
+let inputLine = "";
+
+for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
+  inputLine = inputLine + symbol;
+}
+
+for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
+  console.log(inputLine);
+}
+
+//Desafio da pirâmide de asterísticos
+
+let size = 5;
+let symbol2 = "*";
+let inputLine2 = "";
+
+for (let lineIndex = 0; lineIndex <= size; lineIndex += 1) {
+  inputLine2 = inputLine2 + symbol2;
+  console.log(inputLine2);
+}
+
+//Desafio da pirâmide invertida
+
+let n1 = 5;
+let symbol3 = "*";
+let inputLine3 = "";
+let inputPosition = n1 - 1;
+
+for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
+  for (let columnIndex = 0; columnIndex < n1; columnIndex += 1) {
+    if (columnIndex < inputPosition) {
+      inputLine3 = inputLine3 + " ";
+    } else {
+      inputLine3 = inputLine3 + symbol3;
+    }
+  }
+  console.log(inputLine3);
+  inputLine3 = "";
+  inputPosition -= 1;
+}
