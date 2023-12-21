@@ -89,3 +89,30 @@ console.log(`Números sorteados: ${lotteryNumbers}`);
 console.log(`Jogo: ${firstGame}`);
 console.log(`Quantidade de acertos: ${numberOfHits}`);
 console.log(`Números acertados: ${hits}`);
+
+//Exercícios Trybank
+
+//Exercício 1
+
+let balance = 100;
+
+function sumBalance(value) {
+  return value + balance;
+}
+
+function subBalance(value) {
+  return balance - value;
+}
+
+function multBalance(value) {
+  return value * balance;
+}
+
+function divBalance(value) {
+  return balance / value;
+}
+
+console.log("Saldo em conta é:" + sumBalance(100));
+console.log("Saldo em conta é:" + subBalance(60));
+console.log("Saldo em conta é:" + multBalance(10));
+console.log("Saldo em conta é:" + divBalance(10));
