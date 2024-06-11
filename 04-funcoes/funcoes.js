@@ -90,7 +90,7 @@ console.log(`Jogo: ${firstGame}`);
 console.log(`Quantidade de acertos: ${numberOfHits}`);
 console.log(`Números acertados: ${hits}`);
 
-//Exercícios Trybank
+//Exercícios Saldo em Conta
 
 //Exercício 1
 
@@ -116,3 +116,5 @@ console.log("Saldo em conta é:" + sumBalance(100));
 console.log("Saldo em conta é:" + subBalance(60));
 console.log("Saldo em conta é:" + multBalance(10));
 console.log("Saldo em conta é:" + divBalance(10));
+
+//Exercício 2 - Trybebank
