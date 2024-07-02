@@ -118,3 +118,29 @@ console.log("Saldo em conta é:" + multBalance(10));
 console.log("Saldo em conta é:" + divBalance(10));
 
 //Exercício 2 - Trybebank
+
+// const trybeBankCustomers = ["Oliva", "Nat", "Gus"];
+
+// function addCustomer(customer) {
+//   if (typeof customer != "string") {
+//     return "O parâmetro passado deve ser do tipo string!";
+//   }
+
+//   trybeBankCustomers.push(customer);
+//   return "Pessoa adicionada com sucesso!";
+// }
+
+// for (let index = 0; index < newCustomers.length; index += 1) {
+//   if (typeof newCustomers[index] === "string") {
+//     customers.push(newCustomers[index]);
+//   } else {
+//     return "Todos os valores precisam ser strings.";
+//   }
+//   return trybeBankCustomers;
+// }
+
+// console.log(addCustomer(true)); // O parâmetro passado deve ser do tipo "string!"
+// console.log(addCustomer("Joaquim")); // Pessoa adicionada com sucesso!
+// console.log(trybeBankCustomers); // [ 'Oliva', 'Nat', 'Gus', 'Joaquim' ]
+// console.log(addCustomers(trybeBankCustomers, ["Carolina", "Adamastor"])); // [ 'Oliva', 'Nat', 'Gus', 'Carolina', 'Adamastor' ]
+// console.log(addCustomers(trybeBankCustomers, ["Miranda", 78])); // Todos os valores precisam ser strings.
