@@ -52,5 +52,8 @@ const getMacInfo = () => {
   }
   return report;
 };
+//console.log(getMacInfo());
 
-console.log(getMacInfo());
+module.exports = {
+  getMacInfo,
+};
