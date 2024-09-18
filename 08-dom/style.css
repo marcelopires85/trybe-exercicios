@@ -1,0 +1,79 @@
+main {
+  display: flex;
+  width: 511px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  margin-left: 5%;
+}
+
+.envie-seu-pedido {
+  color: var(--orange-8, #e8590c);
+  font-family: Inter;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.div-identificacao {
+  display: flex;
+  width: 511px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.div-lg-identificacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.div-lg-identificacao h4 {
+  color: var(--other-black, #000);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 145%;
+}
+
+.inputs-identificacao {
+  display: flex;
+  width: 511px;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.input-name,
+.inputs-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.inputs-identificacao label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  flex: 1 0 0;
+}
+
+.inputs-identificacao input[type="text"],
+.inputs-identificacao input[type="email"] {
+  flex: 1 0 0;
+  color: var(--other-black, #000);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  border: 1px solid var(--gray-4, #ced4da);
+  border-radius: 8px;
+}
