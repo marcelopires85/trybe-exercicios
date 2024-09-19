@@ -152,7 +152,11 @@ main {
 .btn-menos-lanchinho,
 .btn-mais-lanchao,
 .btn-mais-lanche,
-.btn-mais-lanchinho {
+.btn-mais-lanchinho,
+.btn-menos-ovo,
+.btn-mais-ovo,
+.btn-menos-abacaxi,
+.btn-mais-abacaxi {
   width: 32px;
   height: 32px;
   border-radius: 8px;
@@ -174,4 +178,49 @@ main {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
+}
+
+.adicionais {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.div-adicionais {
+  display: flex;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--gray-4, #ced4da);
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.opcao-adicional {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.nome-opcional {
+  color: var(--other-black, #000);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155%;
+  margin: 0px;
+}
+
+.preco-opcional {
+  color: var(--orange-8, #e8590c);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155%;
+  margin: 0px;
 }
