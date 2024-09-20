@@ -5,6 +5,7 @@ main {
   align-items: flex-start;
   gap: 32px;
   margin-left: 5%;
+  margin-top: 10px;
 }
 
 .envie-seu-pedido {
@@ -222,5 +223,191 @@ main {
   font-style: normal;
   font-weight: 500;
   line-height: 155%;
+  margin: 0px;
+}
+
+.molhos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.preco-molho {
+  color: var(--orange-8, #e8590c);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155%;
+}
+
+.opcoes-molhos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.opcoes-molhos label {
+  color: var(--other-black, #000);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.div-tipo-molho {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.batata-frita {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radio-batata {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+input[type="radio"] {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.radio-batata label {
+  color: var(--other-black, #000);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.radio-batata div {
+  display: flex;
+  border-radius: 32px;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.comentarios {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+textarea {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--gray-4, #ced4da);
+  resize: none;
+  color: var(--gray-4, #797b7d);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px;
+  height: 100px;
+}
+
+.termo-aceite {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+.termo-aceite input {
+  display: flex;
+  border-radius: 2px;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.termo-aceite label {
+  color: var(--other-black, #000);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.botoes {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin: 30px 0px;
+}
+
+.btn-enviar {
+  display: flex;
+  padding: 1px 22px;
+  border-radius: 8px;
+  border: 1px solid var(--orange-8, #e8590c);
+  background: var(--orange-8, #e8590c);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--other-white, #fff);
+  /* components/button/md */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 250% */
+}
+
+.btn-recuperar {
+  display: flex;
+  padding: 1px 22px;
+  border-radius: 8px;
+  border: 1px solid var(--orange-8, #e8590c);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--orange-8, #e8590c);
+  /* components/button/md */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 250% */
+  background-color: white;
+}
+
+.canto-laranja {
+  width: 421.736px;
+  height: 500.431px;
+  border-radius: 0px 0px 0px 260px;
+  background: var(--orange-8, #e8590c);
+  flex-shrink: 0;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
   margin: 0px;
 }

@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    <header>
-        <img src="./img/logo.svg" alt="Logo da Loja">
-    </header>
     <main>
+        <header>
+            <img src="./img/logo.svg" alt="Logo da Loja">
+        </header>
         <h1 class="envie-seu-pedido">Faça seu pedido</h1>
         <form action="" method="get">
 
@@ -118,9 +118,79 @@
                         <p class="mostrador-itens">0</p>
                         <button class="btn-mais-abacaxi">+</button>
                     </div>
+                </div>
+            </div>
+            </div>
+            <div class="molhos">
+                <div class="div-lg-identificacao">
+                    <img src="./img/molhos.svg" alt="Logo dos Molhos">
+                    <h4>Molhos</h4>
+                    <p class="preco-molho">+R$ 2,00 cada</p>
+                </div>
+                <div class="opcoes-molhos">
+                    <div class="div-tipo-molho">
+                        <input type="checkbox" name="molho" id="molho-madeira">
+                        <label for="molho-madeira">Molho Madeira</label>
+                    </div>
 
+                    <div class="div-tipo-molho">
+                        <input type="checkbox" name="molho" id="molho-barbecue">
+                        <label for="molho-barbecue">Molho Barbecue</label>
+                    </div>
+
+                    <div class="div-tipo-molho">
+                        <input type="checkbox" name="molho" id="molho-da-casa">
+                        <label for="molho-da-casa">Molho da Casa</label>
+                    </div>
+
+                    <div class="div-tipo-molho">
+                        <input type="checkbox" name="molho" id="molho-de-alho">
+                        <label for="molho-de-alho">Molho de Alho</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="batata-frita">
+                <div class="div-lg-identificacao">
+                    <img src="./img/batata-frita.svg" alt="Logo de batata frita">
+                    <h4>Batata frita</h4>
+                    <p class="preco-batata">+R$ 2,00 cada</p>
+                </div>
+
+                <div class="radio-batata">
+                    <div>
+                        <input type="radio" name="batata" id="sim">
+                        <label for="sim">Sim, por favor!</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="batata" id="nao">
+                        <label for="nao">Não, valeu.</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="comentarios">
+                <div class="div-lg-identificacao">
+                    <img src="./img/comentario.svg" alt="Logo de batata frita">
+                    <h4>Algum comentário</h4>
+
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Digite seu comentário aqui:"></textarea>
+            </div>
+            <div class="termo-aceite">
+                <input type="checkbox" name="" id="aceite">
+                <label for="aceite">Você aceita colocar sua vida em risco por livre e espontânea vontade?</label>
+            </div>
+
+            <div class="botoes">
+                <button class="btn-enviar">Enviar pedido</button>
+                <button class="btn-recuperar">Recuperar pedido anterior</button>
+            </div>
         </form>
     </main>
+    <div class="canto-laranja"></div>
 </body>
 
 </html>
