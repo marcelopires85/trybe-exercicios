@@ -46,6 +46,7 @@ main {
   width: 511px;
   align-items: flex-start;
   gap: 16px;
+  justify-content: space-between;
 }
 
 .input-name,
@@ -77,6 +78,7 @@ main {
   line-height: 40px;
   border: 1px solid var(--gray-4, #ced4da);
   border-radius: 8px;
+  width: 230px;
 }
 
 .tamanho {
@@ -330,7 +332,8 @@ textarea {
   font-style: normal;
   font-weight: 400;
   padding: 10px;
-  height: 100px;
+  height: 200px;
+  width: 350px;
 }
 
 .termo-aceite {
@@ -404,10 +407,58 @@ textarea {
   border-radius: 0px 0px 0px 260px;
   background: var(--orange-8, #e8590c);
   flex-shrink: 0;
+  position: absolute;
+  top: 10%;
+  right: 10%;
 }
 
-body {
+.principal {
   display: flex;
   justify-content: space-between;
   margin: 0px;
+}
+
+.ticket {
+  display: none;
+  width: 405px;
+  border-radius: 20px;
+  background: var(--orange-0, #fff4e6);
+  flex-shrink: 0;
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  color: var(--other-black, #000);
+  font-family: inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: center;
+}
+
+.ticket-id {
+  color: var(--orange-8, #e8590c);
+  font-family: inter;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.itens-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.itens-lista ol {
+  list-style-type: none;
+}
+
+.itens-lista h3 {
+  text-align: right;
+  margin-right: 40px;
 }
