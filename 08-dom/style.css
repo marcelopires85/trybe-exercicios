@@ -445,6 +445,7 @@ textarea {
   line-height: 130%;
   text-align: center;
   margin: 10px 0px;
+  text-transform: uppercase;
 }
 
 .itens-lista {

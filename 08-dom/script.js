@@ -19,6 +19,9 @@ const qtdAbacaxi = document.querySelector("#qtd-abacaxi");
 const btnMaisAbacaxi = document.querySelector(".btn-mais-abacaxi");
 const batata = document.getElementById("sim");
 const comentario = document.querySelector("textarea");
+const listaNotaFiscal = document.getElementById("orderList");
+const nota = document.querySelector(".ticket");
+const numeroPedido = document.getElementById("ticket-number");
 
 //Função para adicionar a quantidade nos botões
 //ParseInt converte um dado de uma string para número
@@ -42,11 +45,19 @@ atualizarQuantidade(btnMenosLanchinho, btnMaisLanchinho, qtdLanchinho);
 atualizarQuantidade(btnMenosOvo, btnMaisOvo, qtdOvo);
 atualizarQuantidade(btnMenosAbacaxi, btnMaisAbacaxi, qtdAbacaxi);
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+const geraNumeroPedido = () => {
+  const numero = Math.ceil(Math.random() * 100);
+  numeroPedido.innerText = numero;
+
+  return numero;
+};
+
+const criarNotaFiscal = () => {
+  listaNotaFiscal.innerHTML = "";
 
   let orderInfo = {};
 
+  orderInfo.Id = geraNumeroPedido();
   orderInfo.Nome = inputName.value;
   orderInfo.Email = inputEmail.value;
 
@@ -64,7 +75,37 @@ form.addEventListener("submit", (event) => {
 
   if (batata.checked === true) orderInfo.Batata = "Sim";
 
-  if (comentario !== "") orderInfo.Comentario = comentario.value;
+  if (comentario.value !== "") orderInfo.Comentario = comentario.value;
 
-  console.log(orderInfo);
+  const itensNotaFiscal = Object.entries(orderInfo);
+
+  let sum = 0;
+
+  itensNotaFiscal.forEach((item) => {
+    const newLi = document.createElement("li");
+    //cria o elemento
+    newLi.innerText = `${item[0]}: ${item[1]}`;
+    //popula o espaço que será criado
+    listaNotaFiscal.appendChild(newLi);
+    //cria as li dinamicamente como filhos no html
+
+    if (item[0] === "Lanchao") sum += parseInt(item[1]) * 20;
+    if (item[0] === "Lanche") sum += parseInt(item[1]) * 15;
+    if (item[0] === "Lanchinho") sum += parseInt(item[1]) * 10;
+    if (item[0] === "Ovo") sum += parseInt(item[1]) * 1.5;
+    if (item[0] === "Abacaxi") sum += parseInt(item[1]);
+    if (item[0] === "Molhos") sum += molhos.length * 2;
+    if (item[0] === "Batata") sum += 2;
+  });
+
+  const newH3 = document.createElement("h3");
+  newH3.innerText = `TOTAL: R$ ${sum.toFixed(2)}`;
+  listaNotaFiscal.appendChild(newH3);
+
+  nota.style.display = "block";
+};
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  criarNotaFiscal();
 });
