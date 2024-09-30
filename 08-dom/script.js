@@ -22,6 +22,7 @@ const comentario = document.querySelector("textarea");
 const listaNotaFiscal = document.getElementById("orderList");
 const nota = document.querySelector(".ticket");
 const numeroPedido = document.getElementById("ticket-number");
+const btnRecuperar = document.querySelector(".btn-recuperar");
 
 //Função para adicionar a quantidade nos botões
 //ParseInt converte um dado de uma string para número
@@ -103,9 +104,42 @@ const criarNotaFiscal = () => {
   listaNotaFiscal.appendChild(newH3);
 
   nota.style.display = "block";
+
+  localStorage.setItem("nota", JSON.stringify(orderInfo));
 };
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   criarNotaFiscal();
+});
+
+const recuperaNota = () => {
+  listaNotaFiscal.innerHTML = "";
+
+  const objetoRecuperado = JSON.parse(localStorage.nota);
+
+  numeroPedido.innerText = objetoRecuperado.Id;
+
+  const itensNotaFiscal = Object.entries(objetoRecuperado);
+
+  itensNotaFiscal.forEach((item) => {
+    const newLi = document.createElement("li");
+    //cria o elemento
+    newLi.innerText = `${item[0]}: ${item[1]}`;
+    //popula o espaço que será criado
+    listaNotaFiscal.appendChild(newLi);
+    //cria as li dinamicamente como filhos no html
+  });
+
+  const newH3 = document.createElement("h3");
+  newH3.innerText = `TOTAL: R$ ${objetoRecuperado.Total.toFixed(2)}`;
+  listaNotaFiscal.appendChild(newH3);
+
+  orderInfo.Total = sum;
+
+  nota.style.display = "block";
+};
+
+btnRecuperar.addEventListener("click", () => {
+  recuperaNota;
 });
